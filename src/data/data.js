@@ -1,4 +1,4 @@
-var pinDatas=[
+export const pinDatas = [
   {id:1,loc:[103.1875,28.3125],type:'rai_1'},
   {id:2,loc:[99.7036209106445,108.400337219238],type:'rai_2'},
   {id:3,loc:[106.75,131.5],type:'rai_3'},

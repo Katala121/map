@@ -9,6 +9,7 @@
   border: none;
 }
 
-.marker_custom {
-  position: relative;
+.leaflet-control .fullscreen-icon {
+  background-image: url("https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/fullscreen.png");
+  background-position: top;
 }

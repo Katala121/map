@@ -1,6 +1,5 @@
 import L from 'leaflet';
 import { Marker, Popup } from 'react-leaflet';
-// import icon from '../../../images/rai.png';
 
 const MarkerCustom = ({xy, icon}) => {
 
@@ -17,11 +16,9 @@ const MarkerCustom = ({xy, icon}) => {
 });
 
   return (
-    <div className="marker_custom">
-      <Marker position={xy} draggable={true} icon={Icon} className="marker_custom__icon">
-        <Popup>Marker</Popup>
-      </Marker>
-    </div>
+    <Marker position={xy} draggable={false} icon={Icon}>
+      <Popup>Marker</Popup>
+    </Marker>
   )
 }
 
