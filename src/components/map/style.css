@@ -13,3 +13,56 @@
   background-image: url("https://api.mapbox.com/mapbox.js/plugins/leaflet-fullscreen/v1.0.1/fullscreen.png");
   background-position: top;
 }
+
+.popup_inputs>input[type=radio] {
+  display: none;
+}
+
+.popup_inputs>input:nth-child(1):checked+label {
+  background-color: #34b792;
+  color: #fff;
+}
+
+.popup_inputs>input:nth-child(3):checked+label {
+  background-color: silver;
+  color: #fff;
+}
+
+.popup_inputs>input[type=radio]+label {
+  display: inline-block;
+  width: 59px;
+  text-align: center;
+  font-size: 11px;
+  letter-spacing: .5px;
+  color: grey;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.leaflet-popup .leaflet-popup-content-wrapper {
+  border-radius: 2px;
+}
+
+.leaflet-popup .leaflet-popup-content {
+  margin: 2px;
+}
+
+.leaflet-popup .leaflet-popup-close-button {
+  display: none;
+}
+
+.leaflet-container a {
+  color: #0078A8;
+  text-decoration: none;
+}
+
+.w-scroll-achievement-link {
+  display: block;
+  margin-bottom: 3px;
+  text-align: center;
+  font-size: 11px;
+}
+
+.obtained {
+  opacity: .6;
+}
