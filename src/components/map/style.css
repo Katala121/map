@@ -1,0 +1,14 @@
+.map_component_wrapper {
+  width: 480px;
+  height: 480px;
+  border: 2px solid #000;
+}
+
+.leaflet-marker-pane .leaflet-div-icon {
+  background: none;
+  border: none;
+}
+
+.marker_custom {
+  position: relative;
+}
