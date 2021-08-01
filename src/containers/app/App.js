@@ -12,17 +12,19 @@ function App() {
   const [state, setState] = React.useState(initialState);
   
   React.useEffect(() => {
-    const local = JSON.parse(localStorage['markers_map']);
+    if (localStorage['markers_map']) {
+      const local = JSON.parse(localStorage['markers_map']);
       const init = state.map(item => {
-      if (!local.length) return item;
-      local.map(i => {
-        if (Number(Object.keys(i)[0]) === item.id) {
-          item.obtained = i[Object.keys(i)[0]];
-        }
-      })
-      return item;
+        if (!local.length) return item;
+        local.map(i => {
+          if (Number(Object.keys(i)[0]) === item.id) {
+            item.obtained = i[Object.keys(i)[0]];
+          }
+        })
+        return item;
      })
      setState(init)
+    }
   },[])
 
   React.useEffect(() => {

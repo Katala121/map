@@ -12,6 +12,6 @@ code {
     monospace;
 }
 
-#root {
+#map-container {
   width: 480px;
 }
