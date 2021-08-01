@@ -5,6 +5,8 @@
   align-items: center;
   width: 100%;
   margin: 5px 0;
+  border-bottom: 1px solid #e2e2e2;
+  padding: 7px 3px;
 }
 
 .marker_item__image {
@@ -104,4 +106,8 @@
 
 .marker_item__checkbox_input {
   float: left;
+}
+
+.checked {
+  opacity: 0.5;
 }

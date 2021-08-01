@@ -64,5 +64,6 @@
 }
 
 .obtained {
-  opacity: .6;
+  opacity: .7;
+  filter: grayscale(100%);
 }
