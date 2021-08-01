@@ -40,7 +40,7 @@ return (
       crs={CRS.Simple}
       bounds={[[-25, -26.5], [221, 423.5]]}
       boundsOptions={{padding: [50, 50]}}
-      style={{ height: "85vh" }}
+      style={{ height: "75vh" }}
       maxBoundsViscosity={1.0}
       zoom={1} 
       center={[100, 240]}

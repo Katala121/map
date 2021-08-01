@@ -13,6 +13,13 @@ const MarkerItem = ({text, imageSrc, id, changeState, obtained}) => {
     changeState(obj)
   }
 
+  // React.useEffect(() => {
+  //   if (document.querySelector(`#marker_item__text-${id}`)) {
+  //     console.log('marker')
+  //     document.querySelector(`#marker_item__text-${id}`).innerHTML = text;
+  //   }
+  // },[])
+
   return (
     <div className="marker_item">
       <div className="marker_item__image">
@@ -28,8 +35,7 @@ const MarkerItem = ({text, imageSrc, id, changeState, obtained}) => {
           </div>
         </a>
       </div>
-      <div className="marker_item__text">
-        {text}
+      <div className={`marker_item__text text-${id}`}>
       </div>
       <div className="marker_item__checkbox">
         <input 

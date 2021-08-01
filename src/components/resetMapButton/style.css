@@ -1,0 +1,19 @@
+.reset_map_button {
+  background-color: #FFF;
+  color: #34b792;
+  border: 1px solid #34b792;
+  width: 100%;
+  border-radius: 2px;
+  padding: 7px;
+  text-align: center;
+  font-size: 15px;
+  display: block;
+  font-weight: 700;
+  margin-top: 5px;
+}
+
+.reset_map_button:hover {
+  color: #FFF;
+  background-color: #34b792;
+  cursor: pointer;
+}

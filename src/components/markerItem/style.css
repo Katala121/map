@@ -47,6 +47,10 @@
   line-height: 1.5;
 }
 
+.marker_item__text a {
+  text-decoration: none;
+}
+
 .marker_item__checkbox {
   width: 25%;
   padding-left: 8px;

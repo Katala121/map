@@ -14,6 +14,15 @@ const MarkerList = ({state, setState}) => {
     setState(newState);
   }
 
+  React.useEffect(() => {
+    state.map(item => {
+      if (document.querySelector(`.text-${item.id}`)) {
+        document.querySelector(`.text-${item.id}`).innerHTML = item.text;
+      }
+
+    })
+  },[])
+
   return (
     <div className="marker_list">
       {

@@ -34,7 +34,6 @@ const MarkerCustom = ({xy, icon, id, obtained, changeState}) => {
 
   React.useEffect(() => {
     if (obtained) {
-      console.log(`${id}  ${obtained}`)
       document.querySelector(`.leaflet-div-icon-${id}`).classList.add('obtained');
       if (document.querySelector(`#mapToDo-${id}-1`)) {
         document.querySelector(`#mapToDo-${id}-1`).checked = true;
