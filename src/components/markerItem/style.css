@@ -121,3 +121,7 @@
 .checked {
   opacity: 0.5;
 }
+
+.marker_item__image .entry-content .content-inner.jeg_link_underline a {
+  text-decoration: none;
+}

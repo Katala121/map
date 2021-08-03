@@ -25,7 +25,7 @@ const MapComponent = ({state, setState}) => {
   React.useEffect(() => {
     const map = mapRef.current.leafletElement;
     const bounds = [[-25, -26.5], [221, 423.5]];
-    const image = L.imageOverlay(map_electroculus,
+    const image = L.imageOverlay('https://img.gamewith.jp/img/original_4480a2f80e56896f39faacc87ed3d63b.jpg',
       bounds
     ).addTo(map);
     map.fitBounds(image.getBounds());

@@ -21,7 +21,7 @@ const MarkerItem = ({text, imageSrc, id, changeState, obtained}) => {
   // },[])
 
   return (
-    <div className="marker_item">
+    <div className="marker_item" id={`marker-${id}`}>
       <div className="marker_item__image">
         <a href={imageSrc} target="_blank">
           <div>

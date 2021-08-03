@@ -16,6 +16,17 @@ const MarkerCustom = ({xy, icon, id, obtained, changeState}) => {
     }
   }
 
+  const moveToMarker = (event) => {
+    if (event.target.tagName === 'A') {
+      const elem = document.querySelector(`#marker-${event.target.rel}`);
+      console.log(elem.getBoundingClientRect())
+      window.scrollTo({
+        top: elem.getBoundingClientRect().y,
+        behavior: "smooth"
+      })
+    }
+  }
+
   const onOpenPopup = () => {
     if (obtained) {
       document.querySelector(`.leaflet-div-icon-${id}`).classList.add('obtained');
@@ -63,7 +74,7 @@ const MarkerCustom = ({xy, icon, id, obtained, changeState}) => {
   return (
     <Marker position={xy} draggable={false} icon={Icon}>
       <Popup onOpen={onOpenPopup}>
-        <div>
+        <div onClick={moveToMarker}>
           <a href="javascript:void(0)" rel={id} className="w-scroll-achievement-link">★See How To Get</a>
           <form
             className="popup_inputs"
