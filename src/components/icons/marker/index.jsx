@@ -20,8 +20,9 @@ const MarkerCustom = ({xy, icon, id, obtained, changeState}) => {
     if (event.target.tagName === 'A') {
       const elem = document.querySelector(`#marker-${event.target.rel}`);
       console.log(elem.getBoundingClientRect())
+      if (document.fullscreenElement) document.exitFullscreen();
       window.scrollTo({
-        top: elem.getBoundingClientRect().y,
+        top: elem.getBoundingClientRect().y + window.pageYOffset,
         behavior: "smooth"
       })
     }
